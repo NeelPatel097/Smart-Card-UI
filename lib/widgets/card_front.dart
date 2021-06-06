@@ -37,7 +37,7 @@ class CardFrontView extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Image.asset('assets/visa.png')
+                      Image.asset('assets/logo.png')
                     ],
                   ),
                 ],
