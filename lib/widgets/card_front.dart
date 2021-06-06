@@ -1,6 +1,14 @@
+import 'package:farmer_smart_card_ui/models/models.dart';
 import 'package:flutter/material.dart';
 
 class CardFrontView extends StatelessWidget {
+  final User currentUser;
+
+  const CardFrontView({
+    Key key,
+    @required this.currentUser}) : super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,9 +25,23 @@ class CardFrontView extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Align(
-                  alignment: Alignment.topRight,
-                  child: Image.asset('assets/visa.png')),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('assets/qr.png')
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('assets/visa.png')
+                    ],
+                  ),
+                ],
+              ),
               SizedBox(
                 height: 32,
               ),
