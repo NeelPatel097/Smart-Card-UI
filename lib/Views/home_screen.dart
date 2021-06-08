@@ -1,3 +1,4 @@
+import 'package:farmer_smart_card_ui/Views/screens.dart';
 import 'package:farmer_smart_card_ui/config/palette.dart';
 import 'package:farmer_smart_card_ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +31,14 @@ class HomeScreen extends StatelessWidget {
                     onPressed: () => print('Search'),
                 ),
                 CircleButton(
-                  icon: MdiIcons.message,
+                  icon: MdiIcons.accountCircleOutline,
                   iconSize: 30.0,
-                  onPressed: () => print('Messenger'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfileScreen()),
+                    );
+                  },
                 ),
               ],
             ),

@@ -1,4 +1,5 @@
 import 'package:farmer_smart_card_ui/Views/home_screen.dart';
+import 'package:farmer_smart_card_ui/Views/screens.dart';
 import 'package:farmer_smart_card_ui/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,6 @@ class _NavScreenState extends State<NavScreen> {
     Scaffold(),
     Scaffold(),
     Scaffold(),
-    Scaffold(),
   ];
   final List<IconData> _icons = const [
     Icons.home,
@@ -22,7 +22,6 @@ class _NavScreenState extends State<NavScreen> {
     Icons.shopping_bag,
     Icons.payment,
     Icons.notifications,
-    Icons.ondemand_video
   ];
   int _selectedIndex = 0;
 
