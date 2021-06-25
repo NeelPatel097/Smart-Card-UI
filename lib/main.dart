@@ -1,8 +1,8 @@
 import 'package:farmer_smart_card_ui/Views/SmartCardPage.dart';
+import 'package:farmer_smart_card_ui/Views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'Views/screens.dart';
-import 'config/palette.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         //scaffoldBackgroundColor: Palette.scaffold,
       ),
-      home: NavScreen(),
+      home: SplashScreen(),
     );
   }
 }
