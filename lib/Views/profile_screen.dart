@@ -12,7 +12,7 @@ class ProfileScreen extends StatelessWidget {
             brightness: Brightness.light,
             backgroundColor: Colors.white,
             title: Text(
-              'Your Cards :)',
+              'Profile',
               style: const TextStyle(
                   color: Palette.valuefinBlue,
                   fontSize: 28.0,
