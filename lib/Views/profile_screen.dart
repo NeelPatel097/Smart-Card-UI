@@ -24,7 +24,7 @@ class ProfileScreen extends StatelessWidget {
             floating: true,
           ),
           SliverToBoxAdapter(
-              child: CardFrontView()
+              child: ProfileBody()
           ),
         ],
       ),
